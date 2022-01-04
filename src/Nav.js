@@ -1,0 +1,14 @@
+function Nav(props) {
+  return (
+    <nav>
+      <ul>
+        <p>{props.name}</p>
+        <a href="/">1</a>
+        <a href="/">2</a>
+        <a href="/">3</a>
+        <a href="/">4</a>
+      </ul>
+    </nav>
+  );
+}
+export default Nav;
