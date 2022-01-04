@@ -42,6 +42,8 @@ export function MovieDetail() {
           alt={movie.title + ' Poster'}
         />
         <div>
+          <Link to="/">BACK</Link>
+
           <h1> {movie.title}</h1>
           <p>{movie.overview}</p>
           <ul>
