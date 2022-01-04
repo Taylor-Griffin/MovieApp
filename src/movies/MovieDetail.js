@@ -1,7 +1,5 @@
-import { Link, resolvePath, useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-// import './loadEnv';
-// resolve.fallback: {"path": false};
 
 const BASE_URL = 'https://api.themoviedb.org/3/movie/';
 const API_KEY = `?api_key=${process.env.REACT_APP_MOVIE_API}`;
@@ -25,7 +23,7 @@ export function MovieDetail() {
 
   useEffect(() => {
     getMovie();
-  }, [id]);
+  });
 
   if (!movie.title) return null;
   return (
