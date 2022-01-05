@@ -7,7 +7,7 @@ import { MovieDetail } from './movies/MovieDetail';
 function App() {
   return (
     <div className="App">
-      <h1>Latest Movies</h1>
+      <h1>Current Releases</h1>
       <Routes>
         <Route path="/" element={<MoviesList />} />
         <Route path="/movie/:id" element={<MovieDetail />} />
